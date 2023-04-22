@@ -8,6 +8,7 @@ globalStyle("*", {
 globalStyle("html,body", {
   margin: 0,
   padding: 0,
+  backgroundColor: "#3332",
 });
 
 globalStyle("body", {

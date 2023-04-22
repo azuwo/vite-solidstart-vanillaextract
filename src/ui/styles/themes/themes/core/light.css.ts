@@ -4,7 +4,7 @@ import { ThemeC } from "../../contract.css";
 
 export const CoreLightTheme = createTheme(ThemeC, {
   colors: {
-    brand: "blue",
+    brand: "white",
   },
   fonts: {
     responsive: {

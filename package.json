@@ -7,22 +7,24 @@
   },
   "type": "module",
   "devDependencies": {
-    "@types/node": "18.15.9",
+    "@types/node": "18.15.13",
     "@vanilla-extract/vite-plugin": "3.8.0",
-    "esbuild": "0.17.13",
-    "postcss": "8.4.21",
-    "solid-start-node": "0.2.23",
-    "typescript": "5.0.2",
-    "vite": "4.2.1"
+    "esbuild": "0.17.17",
+    "postcss": "8.4.23",
+    "solid-start-node": "0.2.26",
+    "typescript": "5.0.4",
+    "vite": "4.3.1"
   },
   "dependencies": {
-    "@solidjs/meta": "0.28.2",
+    "@kobalte/core": "0.8.2",
+    "@solid-primitives/i18n": "1.2.4",
+    "@solidjs/meta": "0.28.4",
     "@solidjs/router": "0.8.2",
-    "@vanilla-extract/css": "1.10.0",
-    "@vanilla-extract/sprinkles": "1.5.2",
-    "solid-js": "1.6.15",
-    "solid-start": "0.2.23",
-    "undici": "5.21.0"
+    "@vanilla-extract/css": "1.11.0",
+    "@vanilla-extract/sprinkles": "1.6.0",
+    "solid-js": "1.7.3",
+    "solid-start": "0.2.26",
+    "undici": "5.22.0"
   },
   "engines": {
     "node": ">=16.8"
