@@ -9,6 +9,7 @@
     "jsx": "preserve",
     "strict": true,
     "types": ["solid-start/env"],
+    "typeRoots": ["src/ui/@types"],
     "baseUrl": "./",
     "paths": {
       "~/*": ["./src/*"],

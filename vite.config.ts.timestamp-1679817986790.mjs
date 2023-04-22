@@ -1,0 +1,14 @@
+// vite.config.ts
+import { vanillaExtractPlugin } from "file:///mnt/Datos/Dani/WebProjects/demos/vite-solidstart-vanillaextract/node_modules/.pnpm/@vanilla-extract+vite-plugin@3.8.0_vite@4.2.1/node_modules/@vanilla-extract/vite-plugin/dist/vanilla-extract-vite-plugin.cjs.js";
+import solid from "file:///mnt/Datos/Dani/WebProjects/demos/vite-solidstart-vanillaextract/node_modules/.pnpm/solid-start@0.2.23_6fmazxgypit2etspk5gvg3vupy/node_modules/solid-start/vite/plugin.js";
+import { defineConfig } from "file:///mnt/Datos/Dani/WebProjects/demos/vite-solidstart-vanillaextract/node_modules/.pnpm/vite@4.2.1_@types+node@18.15.9/node_modules/vite/dist/node/index.js";
+var vite_config_default = defineConfig({
+  plugins: [
+    solid(),
+    vanillaExtractPlugin()
+  ]
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcudHMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCIvbW50L0RhdG9zL0RhbmkvV2ViUHJvamVjdHMvZGVtb3Mvdml0ZS1zb2xpZHN0YXJ0LXZhbmlsbGFleHRyYWN0XCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ZpbGVuYW1lID0gXCIvbW50L0RhdG9zL0RhbmkvV2ViUHJvamVjdHMvZGVtb3Mvdml0ZS1zb2xpZHN0YXJ0LXZhbmlsbGFleHRyYWN0L3ZpdGUuY29uZmlnLnRzXCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ltcG9ydF9tZXRhX3VybCA9IFwiZmlsZTovLy9tbnQvRGF0b3MvRGFuaS9XZWJQcm9qZWN0cy9kZW1vcy92aXRlLXNvbGlkc3RhcnQtdmFuaWxsYWV4dHJhY3Qvdml0ZS5jb25maWcudHNcIjtpbXBvcnQgeyB2YW5pbGxhRXh0cmFjdFBsdWdpbiB9IGZyb20gXCJAdmFuaWxsYS1leHRyYWN0L3ZpdGUtcGx1Z2luXCI7XG5pbXBvcnQgc29saWQgZnJvbSBcInNvbGlkLXN0YXJ0L3ZpdGVcIjtcbmltcG9ydCB7IGRlZmluZUNvbmZpZyB9IGZyb20gXCJ2aXRlXCI7XG5cbmV4cG9ydCBkZWZhdWx0IGRlZmluZUNvbmZpZyh7XG4gIHBsdWdpbnM6IFtcbiAgICBzb2xpZCgpLFxuICAgIHZhbmlsbGFFeHRyYWN0UGx1Z2luKClcbiAgXSxcbn0pO1xuIl0sCiAgIm1hcHBpbmdzIjogIjtBQUFrWCxTQUFTLDRCQUE0QjtBQUN2WixPQUFPLFdBQVc7QUFDbEIsU0FBUyxvQkFBb0I7QUFFN0IsSUFBTyxzQkFBUSxhQUFhO0FBQUEsRUFDMUIsU0FBUztBQUFBLElBQ1AsTUFBTTtBQUFBLElBQ04scUJBQXFCO0FBQUEsRUFDdkI7QUFDRixDQUFDOyIsCiAgIm5hbWVzIjogW10KfQo=
