@@ -4,18 +4,18 @@ import { Suspense } from "solid-js";
 import {
   Body,
   ErrorBoundary,
-  FileRoutes,
   Head,
   Html,
   Meta,
-  Routes,
   Scripts,
   Title,
 } from "solid-start";
+import CustomRouter from "./routes/router";
 import { CounterProvider } from "./ui/components/Counter/counter_context";
 import { ThemeProvider } from "./ui/components/contexts/theme_context/theme_context";
 import { LanguageContext } from "./ui/i18n/context";
 import "./ui/styles/globals.css";
+import "./ui/styles/reset.css";
 import { themesRecord } from "./ui/styles/themes";
 
 export default function Root() {
@@ -32,9 +32,7 @@ export default function Root() {
             <Suspense>
               <ErrorBoundary>
                 <CounterProvider count={25}>
-                  <Routes>
-                    <FileRoutes />
-                  </Routes>
+                  <CustomRouter />
                 </CounterProvider>
               </ErrorBoundary>
             </Suspense>
