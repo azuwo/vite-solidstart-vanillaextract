@@ -1,4 +1,10 @@
-import { Accessor, createContext, createSignal, JSX, useContext } from "solid-js";
+import {
+  Accessor,
+  createContext,
+  createSignal,
+  JSX,
+  useContext,
+} from "solid-js";
 import { themesRecord } from "~/ui/styles/themes";
 
 type TStore = [
@@ -6,8 +12,9 @@ type TStore = [
   {
     toggleTheme(): void;
     changeTheme(newTheme: string): void;
+    isLightTheme(): boolean;
   }
-]
+];
 
 const ThemeContext = createContext<TStore>();
 
@@ -17,15 +24,23 @@ type ThemeProviderProps = {
 };
 
 export const ThemeProvider = (props: ThemeProviderProps) => {
-  const [theme, setTheme] = createSignal<string>(props.theme || themesRecord.CoreLightTheme);
+  const [theme, setTheme] = createSignal<string>(
+    props.theme || themesRecord.CoreLightTheme
+  );
   const store: TStore = [
     theme,
     {
-      toggleTheme: () => setTheme(theme() === themesRecord.CoreLightTheme ? themesRecord.CoreDarkTheme : themesRecord.CoreLightTheme),
-      changeTheme: newTheme => setTheme(newTheme)
-    }
+      toggleTheme: () =>
+        setTheme(
+          theme() === themesRecord.CoreLightTheme
+            ? themesRecord.CoreDarkTheme
+            : themesRecord.CoreLightTheme
+        ),
+      changeTheme: (newTheme) => setTheme(newTheme),
+      isLightTheme: () =>
+        theme() === themesRecord.CoreLightTheme ? true : false,
+    },
   ];
-
 
   return (
     <ThemeContext.Provider value={store}>
